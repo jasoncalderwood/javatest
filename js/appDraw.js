@@ -29,6 +29,11 @@ function setup() {
 
   
   function draw() {
+    stroke(0);
+    strokeWeight(5);
+    if (mouseIsPressed === true) {
+      line(mouseX, mouseY, pmouseX, pmouseY);
+    }
     stroke(131, 186, 201);
     strokeWeight(1);
     circle(10, 15, 15);
@@ -55,9 +60,5 @@ function setup() {
     circle(535, 15, 15);
     circle(560, 15, 15);
     circle(585, 15, 15);
-    stroke(0);
-    strokeWeight(5);
-    if (mouseIsPressed === true) {
-      line(mouseX, mouseY, pmouseX, pmouseY);
-    }
+ 
   }
